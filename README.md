@@ -43,7 +43,7 @@ def menu():
         elif opcao == "3":
             atualizar_estoque()
         elif opcao == "4":
-            print("Saindo do sistema...")
+            print("Saindo do sistema...")# Atualização pela equipe de operaçôes
             break
         else:
             print("Opção inválida.\n")
