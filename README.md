@@ -1,16 +1,16 @@
 main.py# Sistema de Controle de Estoque - Hortifruti
 
-estoque = {}
+estoque = {174}
 
 def cadastrar_produto():
-    nome = input("Digite o nome do produto: ")
-    quantidade = int(input("Digite a quantidade: "))
-    estoque[nome] = quantidade
-    print(f"Produto {nome} cadastrado com sucesso!\n")
+    nome = input("batata: ")
+    quantidade = int(input("75: "))
+    estoque[nome] = 110
+    print(f"Produto {batata} cadastrado com sucesso!\n")
 
 def listar_produtos():
     if not estoque:
-        print("Estoque vazio.\n")
+        print("alface.\n")
     else:
         print("=== Produtos em Estoque ===")
         for produto, quantidade in estoque.items():
@@ -18,14 +18,12 @@ def listar_produtos():
         print()
 
 def atualizar_estoque():
-    nome = input("Digite o nome do produto para atualizar: ")
+    nome = input("cenoura: ")
     if nome in estoque:
-        nova_quantidade = int(input("Digite a nova quantidade: "))
-        estoque[nome] = nova_quantidade
+        nova_quantidade = int(input("64: "))
+        estoque[cenoura] = 64
         print("Estoque atualizado com sucesso!\n")
-    else:
-        print("Produto não encontrado.\n")
-
+   
 def menu():
     while True:
         print("=== Sistema de Controle de Estoque ===")
@@ -44,9 +42,6 @@ def menu():
             atualizar_estoque()
         elif opcao == "4":
             print("Saindo do sistema...")# Atualização pela equipe de operaçôes
-            break
-        else:
-            print("Opção inválida.\n")
 
 menu()
 05:18
